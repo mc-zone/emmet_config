@@ -1,7 +1,7 @@
 {
 	"variables": {
-		"lang": "en",
-		"locale": "en-US",
+		"lang": "zh-cmn-Hans",
+		"locale": "zh-cmn",
 		"charset": "UTF-8",
 		"indentation": "\t",
 		"newline": "\n"
@@ -641,7 +641,18 @@
 			"c": "<!-- |${child} -->",
 			"cc:ie6": "<!--[if lte IE 6]>\n\t${child}|\n<![endif]-->",
 			"cc:ie": "<!--[if IE]>\n\t${child}|\n<![endif]-->",
-			"cc:noie": "<!--[if !IE]><!-->\n\t${child}|\n<!--<![endif]-->"
+			"cc:noie": "<!--[if !IE]><!-->\n\t${child}|\n<!--<![endif]-->",
+
+			"script":"<script type=\"text/javascript\">${1}</script>",
+			"script:src":"<script type=\"text/javascript\" src=\"${1}\"></script>",
+			"script:s":"script:src",
+			"style":"<style type=\"text/css\">${1}</style>",
+
+			"tpvolist":"<volist name=\"${1}\" id=\"${2}\" />${3}</volist>",
+            "tpif":"<if condition=\"${1}\">${2}</volist>",
+            "json_e":"JSON.stringify(${1})",
+            "json_d":"JSON.parse(${1});",
+            "require":"require([${1}],function(${2}){\n\t\t${3}\n}"
 		},
 		
 		"abbreviations": {
@@ -673,9 +684,7 @@
 			"meta:win": "<meta http-equiv=\"Content-Type\" content=\"text/html;charset=windows-1251\" />",
 			"meta:vp": "<meta name=\"viewport\" content=\"width=${1:device-width}, user-scalable=${2:no}, initial-scale=${3:1.0}, maximum-scale=${4:1.0}, minimum-scale=${5:1.0}\" />",
 			"meta:compat": "<meta http-equiv=\"X-UA-Compatible\" content=\"${1:IE=7}\" />",
-			"style": "<style>",
-			"script": "<script type=\"text/javascript\" !src=\"\">",
-			"script:src": "<script type=\"text/javascript\" src=\"\">",
+			
 			"img": "<img src=\"\" alt=\"\" />",
 			"img:s|img:srcset": "<img srcset=\"\" src=\"\" alt=\"\" />",
 			"img:z|img:sizes": "<img sizes=\"\" srcset=\"\" src=\"\" alt=\"\" />",
@@ -804,13 +813,9 @@
 			"optgroup+": "optgroup>option",
 			"optg+": "optgroup>option",
 			"pic+": "picture>source:srcset+img"
+
+			
 		}
-	},
-	
-	"xml": {
-		"extends": "html",
-		"profile": "xml",
-		"filters": "html"
 	},
 	
 	"xsl": {
