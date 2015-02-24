@@ -1,19 +1,24 @@
 {
-  
+  // Emmet 偏好设置
+  // Doc: http://docs.emmet.io/customization/preferences/
+  "preferences": {
+    "css.unitAliases": "c:ch, d:deg, g:grad, r:rad, t:turn,    e:em, p:%, x:ex, r:rem",
+    "css.keywords": "none, initial, unset,    auto, inherit, all",
+    "css.keywordAliases": "n:none, ih:inherit, ii:initial, db:double, u:unset,     a:auto, s:solid, da:dashed, do:dotted, t:transparent",
+    "css.unitlessProperties": "animation-iteration-count, counter-increment, font-size-adjust, flex-grow, flex-shrink, order, column-count, orphans, widows, shape-image-threshold, mask-box-outset,    z-index, line-height, opacity, font-weight, zoom"
+  },
 
+  // 代码片段扩展
+  // Doc: https://github.com/emmetio/emmet/blob/master/snippets.json
+  "snippets": {
     "variables": {
         "lang": "zh-cn",
-        "locale": "zh-CN",
-        "charset": "UTF-8",
         "color": "#ccc",
-        "bg-color": "#ccc",
-        "indentation": "\t",
-        "newline": "\n"
+        "bg-color": "#ccc"
     },
 
     "css": {
-        "filters": "html,css",
-        "profile": "css",
+        "filters": "html",
         "snippets": {
             "co": "color:#${1:333};",
             "co:f": "color:#${fff};",
@@ -25,6 +30,7 @@
             "bg:hsla": "background:hsla(${1:0}, ${2:0%}, ${3:0%}, .${4:5});",
             "bgc:hsl": "background-color:hsl(${1:0}, ${2:0%}, ${3:0%});",
             "bgc:hsla": "background-color:hsla(${1:0}, ${2:0%}, ${3:0%}, .${4:5});",
+
             "ct": "content: '${1}';${2}",
 
             "objp": "object-position:${1:50%} ${2:50%};",
@@ -191,20 +197,21 @@
             "aj": "<a href=\"javascript:;\">${child}|</a>",
 
 
-           
+            //开始自己原有的内容
+            //cdn
             "jqcdn":"<script type=\"text/javascript\" src=\"http://cdn.staticfile.org/jquery/1.11.1/jquery.min.js\"></script>",
             "zeptocdn":"<script type=\"text/javascript\" src=\"http://cdn.staticfile.org/zepto/1.1.4/zepto.min.js\"></script>",
             "bs3cdn":"<link type=\"text/css\" href=\"http://cdn.staticfile.org/twitter-bootstrap/3.3.1/css/bootstrap.min.css\" />\n<link type=\"text/css\" href=\"http://cdn.staticfile.org/twitter-bootstrap/3.3.1/css/bootstrap-theme.min.css\" />\n<script type=\"text/javascript\" src=\"http://cdn.staticfile.org/twitter-bootstrap/3.3.1/js/bootstrap.min.js\"></script>",
-           
+            //标签
             "metav":"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no\">",
             "script":"<script type=\"text/javascript\">\n\t${1}\n</script>",
             "script:src":"<script type=\"text/javascript\" src=\"${1}\"></script>",
             "script:s":"script:src",
             "style":"<style type=\"text/css\">\n\t${1}\n</style>",
-           
+            //ThinkPHP
             "tpvolist":"<volist name=\"${1}\" id=\"${2}\" >\n\t${3}\n</volist>",
             "tpif":"<if condition=\"${1}\">${2}</if>",
-            
+            //js
             "json_e":"JSON.stringify(${1})",
             "json_d":"JSON.parse(${1});",
             "require":"require([${1}],function(${2}){\n\t\t${3}\n}"
@@ -217,18 +224,7 @@
             "vbox": ".center-box>b.center-hack+.center-content>p{未知高度垂直居中模块}",
             "vimg+": ".center-box>b.center-hack+.center-content>(.center-img>a>img)+p{未知高度垂直居中模块}"
         }
-    },
-    "php":{
-
-        "filters": "php",
-        "profile": "php",
-        "snippets": {
-            "disp":"\\$this->display();",
-            "pbf":"public function ${1} { \n\t\t${2}\n }",
-            "pof":"protected function ${1} { \n\t\t${2}\n }",
-            "prf":"private function ${1} { \n\t\t${2}\n }"
-        }
     }
-  
+  }
 
 }
