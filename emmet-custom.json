@@ -192,9 +192,10 @@
 
 
            
-            "jqcdn":"<script type=\"text/javascript\" src=\"http://cdn.staticfile.org/jquery/1.11.1/jquery.min.js\"></script>",
-            "zeptocdn":"<script type=\"text/javascript\" src=\"http://cdn.staticfile.org/zepto/1.1.4/zepto.min.js\"></script>",
-            "bs3cdn":"<link type=\"text/css\" href=\"http://cdn.staticfile.org/twitter-bootstrap/3.3.1/css/bootstrap.min.css\" />\n<link type=\"text/css\" href=\"http://cdn.staticfile.org/twitter-bootstrap/3.3.1/css/bootstrap-theme.min.css\" />\n<script type=\"text/javascript\" src=\"http://cdn.staticfile.org/twitter-bootstrap/3.3.1/js/bootstrap.min.js\"></script>",
+            "jqcdn":"<script type=\"text/javascript\" src=\"http://libs.baidu.com/jquery/1.10.2/jquery.min.js\"></script>",
+            "jq2cdn":"<script type=\"text/javascript\" src=\"http://libs.baidu.com/jquery/2.0.0/jquery.min.js\"></script>",
+            "zeptocdn":"<script type=\"text/javascript\" src=\"http://cdn.bootcss.com/zepto/1.1.4/zepto.min.js\"></script>",
+            "bs3cdn":"<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css\" media=\"all\" />\n<link rel=\"stylesheet\" href=\"http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap-theme.min.css\" media=\"all\" />\n<script type=\"text/javascript\" src=\"http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js\"></script>",
            
             "metav":"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no\">",
             "script":"<script type=\"text/javascript\">\n\t${1}\n</script>",
